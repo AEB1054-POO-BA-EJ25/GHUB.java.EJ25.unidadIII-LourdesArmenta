@@ -36,7 +36,8 @@ public class Libro extends Publicacion {
     @Override
     public String toString(){
         
-        return "Autor: "+this.autor+" ISBN: "+this.isbn;
+        return "Editorial: "+super.getEditorial()+" Fecha: "+
+                super.getFecha()+" Autor: "+this.autor+" ISBN: "+this.isbn;
 
     }
 

@@ -20,6 +20,25 @@ public class Revista extends Publicacion{
 
     }
     //getter y setter
+    public String getPeriodicidad(){
+        return this.periodicidad;
+    }
+    public void setPeriodicidad( String periodicidad){
+        this.periodicidad = periodicidad;
+    }
+    public int getEjemplares(){
+        return this.ejemplares;
+    }
+    public void setEjemplares( int ejemplares){
+        this.ejemplares = ejemplares;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString()+" Periodicidad: "+this.periodicidad+" Ejemplares: "+ejemplares;
+    }
+
+
     
 
 
