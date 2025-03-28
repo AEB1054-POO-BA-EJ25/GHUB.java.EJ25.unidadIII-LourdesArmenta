@@ -1,4 +1,5 @@
 package miPrincipal;
+import java.util.Date;
 public class Revista extends Publicacion{
     //atributos
     private String periodicidad;
@@ -13,7 +14,7 @@ public class Revista extends Publicacion{
         this.ejemplares = ejemplares;
 
     }
-    public Revista(String editorial, String fecha, String periodicidad, int ejemplares){
+    public Revista(String editorial, Date fecha, String periodicidad, int ejemplares){
         super(editorial, fecha);
         this.periodicidad = periodicidad;
         this.ejemplares = ejemplares;

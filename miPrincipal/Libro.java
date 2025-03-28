@@ -1,4 +1,5 @@
 package miPrincipal;
+import java.util.Date;
 public class Libro extends Publicacion {
     //atributos
     private String isbn;
@@ -13,7 +14,7 @@ public class Libro extends Publicacion {
         this.isbn = isbn;
         this.autor = autor;
     }
-    public Libro(String editorial, String fecha, String isbn, String autor){
+    public Libro(String editorial, Date fecha, String isbn, String autor){
         super(editorial, fecha);
         this.isbn = isbn;
         this.autor = autor;
@@ -36,7 +37,7 @@ public class Libro extends Publicacion {
     @Override
     public String toString(){
         
-        return "Editorial: "+super.getEditorial()+" Fecha: "+
+        return "Nacionalidad: "+super.nacionalidad+" Editorial: "+super.getEditorial()+" Fecha: "+
                 super.getFecha()+" Autor: "+this.autor+" ISBN: "+this.isbn;
 
     }

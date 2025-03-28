@@ -1,13 +1,23 @@
 package miPrincipal;
+import java.util.Date;
+
 public class Publicacion {
     //atributos
     private String editorial;
-    private String fecha;
+    private Date fecha;
+    String nacionalidad; //por omision
+    protected String version; //protegida
     //constructores
     public Publicacion(){
 
     }
-    public Publicacion(String editorial, String fecha){
+    public Publicacion(String editorial, Date fecha){
+        this.editorial = editorial;
+        this.fecha = fecha;
+    }
+    public Publicacion(String nacionalidad, String version, String editorial, Date fecha){
+        this.nacionalidad = nacionalidad;
+        this.version = version;
         this.editorial = editorial;
         this.fecha = fecha;
     }
@@ -18,10 +28,10 @@ public class Publicacion {
     public void setEditorial(String editorial){
         this.editorial = editorial;
     }
-    public String getFecha(){
+    public Date getFecha(){
         return this.fecha;
     }
-    public void setFecha(String fecha){
+    public void setFecha(Date fecha){
         this.fecha = fecha;
     }
     
