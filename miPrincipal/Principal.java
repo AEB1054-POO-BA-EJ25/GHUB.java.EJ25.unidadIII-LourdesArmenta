@@ -1,5 +1,5 @@
 package miPrincipal;
-import java.util.Date;
+import java.time.*;
 
 import ventana.Ventana;
 
@@ -7,17 +7,17 @@ public class Principal {
     public static void main(String[] args) {
         Publicacion publicacion = new Publicacion();
         publicacion.setEditorial("McGrawnHill");
-        publicacion.setFecha(new Date("01/01/1989"));
+        publicacion.setFecha(LocalDate.parse("1989-01-01"));
 
        
 
         Libro libro = new Libro();
         Libro libro1 = new Libro("ISBN","Juan Collado");
-        Libro libro2 = new Libro("AlfaOmega",new Date("12/05/2020"),"21122","Aurora Diaz");
+        Libro libro2 = new Libro("AlfaOmega",LocalDate.parse("2020-05-12"),"21122","Aurora Diaz");
 
         Revista revista = new Revista();
         revista.setEditorial("Porrua");
-        revista.setFecha(new Date("8/11/2021"));
+        revista.setFecha(LocalDate.parse("2021-11-08"));
         revista.setPeriodicidad("mensual");
         revista.setEjemplares(200);
 
