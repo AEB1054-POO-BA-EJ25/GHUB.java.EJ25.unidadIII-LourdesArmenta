@@ -6,6 +6,16 @@ public class Fecha {
     private int mes;
     private int anio;
     //constructores
+    public Fecha(){
+        this.dia=1;
+        this.mes =1;
+        this.anio = 1900;
+    }
+    public Fecha(int dia, int mes,int anio){
+        this.dia = dia;
+        this.mes = mes;
+        this.anio = anio;
+    }
     //getter y setter
     public int getDia(){
         return this.dia;
