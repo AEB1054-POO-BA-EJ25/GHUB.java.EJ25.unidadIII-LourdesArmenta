@@ -11,6 +11,7 @@ public class TestFecha3 {
 
         //crea un objeto Fecha
         Fecha f1 = new Fecha(dia,mes,anio);
+        //Fecha f1 = new Fecha("23/12/1989");
 
         System.out.println("Ingresa Fecha 2 (dia,mes,anio):");
         dia = entrada.nextInt();
