@@ -13,6 +13,16 @@ public class TestFecha4 {
         //mostra por pantala
         System.out.println("La Fecha ingresada es:"+f);
 
+        //el usuario ingresara los dias a suma
+        System.out.println("Ingrese una cantidad de dias para sumar (puede ser negativo):");
+        int diasSum = entrada.nextInt();
+
+        //le sumanos esos dias a la fecha
+        f.addDias(diasSum);
+
+        //mostramos la nueva fecha (con los dias sumados)
+        System.out.println("sumando "+diasSum+" dias, queda: "+f);
+
         
     }
     
