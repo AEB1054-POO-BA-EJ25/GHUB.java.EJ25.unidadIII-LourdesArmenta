@@ -5,6 +5,7 @@
 ./fecha/FechaDetallada.java
 ./fecha/TestFecha4.java
 ./fecha/TestFecha3.java
+./fecha/TestFechaDetallada.java
 ./fecha/TestFecha.java
 ./fecha/Fecha.java
 ./ventana/VentanaEspecial.java
